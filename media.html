@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Me - Media Page</title>
+</head>
+<body>
+
+  <h1>About Me Through Media</h1>
+
+  <h2>Responsive Picture</h2>
+  <picture>
+    <source media="(min-width: 1024px)" srcset="images/laptop-version.jpg">
+    <source media="(min-width: 768px)" srcset="images/tablet-version.jpg">
+    <source media="(max-width: 767px)" srcset="images/mobile-version.jpg">
+    <img src="images/default.jpg" alt="My responsive profile image">
+  </picture>
+
+  <h2>Intro Audio Message</h2>
+  <audio controls>
+    <source src="media/intro.mp3" type="audio/mpeg">
+    <source src="media/intro.ogg" type="audio/ogg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <h2>Motivational Video</h2>
+  <video width="320" height="240" controls>
+    <source src="media/message.mp4" type="video/mp4">
+    <source src="media/message.webm" type="video/webm">
+    Your browser does not support the video tag.
+  </video>
+
+  <h2>Embedded YouTube Video</h2>
+  <iframe width="360" height="215" src="https://www.youtube.com/shorts/p9Fp0PJh_Cc?feature=share" 
+    title="YouTube video" frameborder="0" allowfullscreen>
+  </iframe>
+
+  <h2>Document Preview (e.g., CV or Certificate)</h2>
+  <object data="media/cv.pdf" type="application/pdf" width="500" height="400">
+    <p>Your browser does not support PDF display. <a href="media/cv.pdf">Download PDF</a></p>
+  </object>
+
+  <h2>Embedded Web Page (GitHub Profile)</h2>
+  <iframe src="https://github.com/" width="100%" height="300" title="GitHub"></iframe>
+
+  <p><a href="index.html">Back to Profile</a></p>
+
+</body>
+</html>
